@@ -2,14 +2,18 @@
 #ifndef BINARYCODE_H
 #define BINARYCODE_H
 
-class BinaryCode
-{
-  int gx;
-  int gy;
+class BinaryCode {
+  private:
+    int len;
+    int dim;
+    int *wt_dist;
+    
 
-public:
-  BinaryCode(int x,int y);
-  int getSum();
+  public:
+    BinaryCode();
+    BinaryCode(int length);
+    BinaryCode()
+    int getSum();
 
 };
 
