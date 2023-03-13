@@ -12,7 +12,11 @@ int main(int argc, char *argv[]) {
   }
   if (argc == 4) {
     if (argv[2][0] == 'g') {
-      BinaryCode Code(len,argv[3]);
+      try {
+        BinaryCode Code(len,argv[3]);
+      } catch(char const *error) {
+        cerr<<"Error: "<<error<<endl;
+      }
     } else if (argv[2][0] == 'f') {
       int a = 1;
     } else {
