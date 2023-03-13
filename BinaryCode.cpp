@@ -1,13 +1,7 @@
 // BinaryCode.cpp
 #include "BinaryCode.h"
 
-BinaryCode::BinaryCode(int x,int y)
+BinaryCode::BinaryCode(int length)
 {
-  gx = x;
-  gy = y;
-}
-
-int BinaryCode::getSum()
-{
-  return gx + gy;
+  len = length;
 }
