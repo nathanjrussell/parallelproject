@@ -2,7 +2,7 @@
 #ifndef BINARYCODE_H
 #define BINARYCODE_H
 
-#include <cstddef> //simply allows macro that sets NULL=0
+#include <cstddef> //simply brings macro that sets NULL=0 (shows intent)
 
 //class that defines BinaryCode
 class BinaryCode
